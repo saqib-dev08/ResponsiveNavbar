@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #dbc2a6;
+    margin: 20px;
+}
+/*Navbar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+background-color: #414a37;
+    border-radius: 20px;
+    padding: 0px 97px 0px 61px;
+    position: relative;
+}
+
+ul {
+   
+    display: flex;
+    gap: 50px;
+
+}
+
+ul>li {
+     list-style: none;
+
+}
+
+li>a {
+        text-decoration: none;
+    color: #dbc2a6;
+
+}
+
+a:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+
+img {
+    border-radius: 100%;
+}
+
+img:hover {
+    cursor: pointer;
+}
+.menu-icon > .fa-bars{
+    
+   font-size: 40px;
+    color: #dbc2a6;
+
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon > i:hover{
+
+    cursor: pointer;
+    color: grey;
+}
+
+
+
+@media(max-width: 1030px) {
+    .menu-icon {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        top: 112px;
+        right: 0px;
+        left: 0px;
+        flex-direction: column;
+        text-align: center;
+        background: #414a37;
+        border-radius: 0px 0px 20px 20px;
+        gap: 0;
+
+
+    }
+    ul>li{
+        padding: 25px;
+
+    }
+}
+
+@media(max-width: 440px) {
+    nav{
+            padding: 0px 37px 0px 16px;
+
+    }
+}
